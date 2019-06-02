@@ -1,7 +1,8 @@
 <template>
   <div class="sensor">
-    <h3>簡易地震計による震度グラフ</h3>
-    <strong>{{ time }} 現在</strong>
+    <h3>簡易震度計による震度グラフ</h3>
+    <p>(制作方法: <a href="https://www.p2pquake.net/dev/rpi_seismometer/">Raspberry Pi 簡易震度計 | P2P地震情報 ガラクタおきば</a>, GitHub: <a href="https://github.com/p2pquake/rpi-seismometer-firebase">p2pquake / rpi-seismometer-firebase</a>)</p>
+    <p><strong>{{ time }} 現在</strong></p>
     <div class="graph">
       <line-chart
         v-if="loaded"
